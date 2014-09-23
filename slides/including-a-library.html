@@ -1,0 +1,15 @@
+<h2>Including a library</h2>
+
+<ul>
+  <li>Include a script tag to the library on your page</li>
+  <li>Call functions from that library</li>
+</ul>
+
+<pre><code class="html" contenteditable>&#60;script src="http://imagine-it.org/math.js"&#62;&#60;&#47;script&#62;
+&#60;script&#62;
+  var answer = math.sum(2, 2);
+  alert(answer);
+&#60;&#47;script&#62;
+</code></pre>
+
+<p>We include the library before our JavaScript so that it loads before our code does.</p>

@@ -1,0 +1,11 @@
+<h2>Getters</h2>
+
+<p>Getters return information about the HTML.</p>
+<p>Sometimes they take arguments to narrow our focus:</p>
+<pre><code class="html" contenteditable>&lt;a href="http://www.google.com"&gt;Google&lt;/a&gt;</code></pre>
+<pre><code class="js" contenteditable>$('a').attr('href');
+// "http://www.google.com"</code></pre>
+<p>And sometimes they don't:</p>
+<pre><code class="html" contenteditable>&lt;p&gt;Welcome!&lt;/p&gt;</code></pre>
+<pre><code class="js" contenteditable>$('p').html();
+// "Welcome!"</code></pre>

@@ -1,0 +1,10 @@
+<h2>$(document).ready()</h2>
+
+<p>We don't want our code to run unless the DOM is ready for it. jQuery has a special function for this:</p>
+<pre><code class="js" contenteditable>$(document).ready()</code></pre>
+<p>Using our existing example, we would write:</p>
+<pre><code class="js" contenteditable>$(document).ready(function() {
+  $('p').addClass('special');
+});</code></pre>
+<p>This will add the class <code>special</code> to all of the <code>p</code> elements.</p>
+<p>The semicolons are important because we want this code to run as soon as our browser reads it.</p>

@@ -1,0 +1,10 @@
+<h2>Named function</h2>
+<p>Or a named function:</p>
+<pre><code class="javascript" contenteditable>var processElem = function(index, elem) {
+  var link = $(elem);
+  link.html(link.html() + '!');
+};
+
+var links = $('a');
+
+links.each(processElem);</code></pre>

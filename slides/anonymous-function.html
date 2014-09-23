@@ -1,0 +1,8 @@
+<h2>Anonymous function</h2>
+<p><code>each</code> can take an anonymous function:</p>
+<pre><code class="javascript" contenteditable>var links = $('a');
+
+  links.each(function(index, elem) {
+  var link = $(elem);
+  link.html(link.html() + '!');
+});</code></pre>

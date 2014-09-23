@@ -1,0 +1,15 @@
+<h2>jQuery vs. JavaScript</h2>
+
+<p>No library:</p>
+<pre><code class="javascript" contenteditable>var p = document.createElement('p');
+p.appendChild(document.createTextNode('Welcome!'));
+p.style.cssFloat = 'left';
+p.style.backgroundColor = 'red';
+p.className = 'special';
+document.querySelector('div.header').appendChild(p);</code></pre>
+
+<p>jQuery:</p>
+<pre><code class="javascript" contenteditable>var newP = $('&#60;p&#62Welcome!&#60;&#47;p&#62');
+newP.css({'float': 'left', 'background-color': 'red')
+newP.addClass('special');
+$('div.header').append(newP);</code></pre>
