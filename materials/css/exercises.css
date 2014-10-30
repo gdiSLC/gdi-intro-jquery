@@ -99,5 +99,16 @@ header nav {
 .content-box:nth-child(3n+1) {
   clear: both; }
 
+form { clear: both; }
+
+article {
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+}
+
+article.hidden {
+  opacity: 0.1;
+}
+
 .center {
   text-align: center; }

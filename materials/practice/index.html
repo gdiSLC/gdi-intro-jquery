@@ -6,6 +6,9 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,800' rel='stylesheet' type='text/css'>
   <link href="../css/reset.css" rel="stylesheet" type="text/css" />
   <link href="../css/exercises.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/main.js"></script>
   </head>
   <body>
     <div id="container">
@@ -14,10 +17,10 @@
         <nav>
           <ul>
             <li><a href="#">All</a></li>
-            <li><a href="#">National</a></li>
-            <li><a href="#">State</a></li>
-            <li><a href="#">Desert</a></li>
-            <li><a href="#">Mountain</a></li>
+            <li><a href="#" data-filter="national">National</a></li>
+            <li><a href="#" data-filter="state">State</a></li>
+            <li><a href="#" data-filter="desert">Desert</a></li>
+            <li><a href="#" data-filter="mountain">Mountain</a></li>
           </ul>
         </nav>
       </header>
@@ -87,6 +90,12 @@
         </article>
       </section>
     </div>
+    <form id='new-article' action=''>
+      <input type=text placeholder=Title name=title />
+      <input type=text placeholder='Image URL' name=image_url />
+      <input type=text placeholder=Description name=description />
+      <input type=text placeholder=Tags name=tags />
+      <input type=submit value=Create />
+    </form>
   </body>
-</head>
 </html>
